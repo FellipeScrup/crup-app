@@ -17,13 +17,13 @@ const usersMock = [
     name: 'Maria',
     email: 'maria@email.com',
     role: 'Engenheira de QA',
-  }
-]
+  },
+];
 
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.css']
+  styleUrls: ['./users.component.css'],
 })
 export class UsersComponent {
   users = usersMock;
@@ -31,7 +31,7 @@ export class UsersComponent {
   constructor(private router: Router) {}
 
   deleteUser(user: User) {
-    this.users = this.users.filter(u => u !== user);
+    this.users = this.users.filter((u) => u !== user);
   }
 
   editUser(user: User) {

@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row align-items-left text-left">
     <div class="col content">
-      <button class="btn btn-primary my-3" (click)="addUser()">Adicionar</button>
+      <button class="btn btn-primary my-4" (click)="addUser()">Adicionar</button>
       <table class="table table-dark table-hover table-item text-center">
         <thead>
           <tr>
@@ -17,8 +17,8 @@
             <td>{{ user.email }}</td>
             <td>{{ user.role }}</td>
             <td>
-              <button class="btn btn-primary mx-1" (click)="editUser(user)">Editar</button>
-              <button class="btn btn-danger mx-1" (click)="deleteUser(user)">Excluir</button>
+              <button class="btn btn-primary mx-2" (click)="editUser(user)">Editar</button>
+              <button class="btn btn-danger mx-2" (click)="deleteUser(user)">Excluir</button>
             </td>
           </tr>
         </tbody>
